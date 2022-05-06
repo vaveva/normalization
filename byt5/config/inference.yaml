@@ -1,0 +1,18 @@
+#From https://github.com/ufal/multilexnorm2021/blob/master/config/inference.yaml
+postprocessing: 
+    type: alnum  # none, alnum
+    bias: 1.0
+
+trainer:
+    n_gpus: 1
+    total_batch_size: 32
+
+dataset:
+    language: TO-BE-SUPPLIED
+    batch_size: 32
+    threads: 1
+    tokenizer: TO-BE-SUPPLIED
+
+model:
+    pretrained_lm: TO-BE-SUPPLIED
+    n_beams: 16

@@ -1,0 +1,17 @@
+# Yaml for onmt_build_vocab 
+
+save_data: skn_data/processed/
+src_vocab: skn_data/processed/vocab.src
+tgt_vocab: skn_data/processed/vocab.tgt
+overwrite: False
+
+data:
+    corpus_1:
+        path_src: skn_data/skn.src.train
+        path_tgt: skn_data/skn.tgt.train
+    corpus_2:
+        path_src: skn_data/train40k.src.chunks
+        path_tgt: skn_data/train40k.tgt.chunks
+    valid:
+        path_src: skn_data/skn.synth.src.dev
+        path_tgt: skn_data/skn.synth.tgt.dev

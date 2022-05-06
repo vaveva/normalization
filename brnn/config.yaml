@@ -1,0 +1,24 @@
+#Yaml for onmt_train 
+data:
+    corpus_1:
+        path_src: data/chunks/train.src.chunks
+        path_tgt: data/chunks/train.tgt.chunks
+
+    valid:
+        path_src: data/chunks/dev.src.chunks
+        path_tgt: data/chunks/dev.tgt.chunks
+
+src_vocab: data/processed/wiki.vocab.src
+tgt_vocab: data/processed/wiki.vocab.tgt
+
+save_model: model/model_norm
+
+train_steps: 100000
+global_attention: general
+encoder_type: brnn
+layers: 2
+
+world_size: 2
+gpu_ranks:
+- 0
+- 1
